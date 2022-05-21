@@ -1,18 +1,13 @@
 // h標籤字體大小
-$title:(
-    "h1": 48px,
-    "h2": 40px,
-    "h3": 36px,
-    "h4": 32px,
-    "h5": 28px,
-    "h6": 24px
-);
+$title:("h1": 2rem,
+    "h2": 4.8rem,
+    "h3": 3.6rem,
+    "h4": 3.2rem,
+    "h5": 2.8rem,
+    "h6": 2.4rem);
 // 網站整體寬度
-$container-width: 1200px;
+$container-width: calc(100vh - 40px);
 
-
-// 全域字型
-$font-style: 'Helvetica';
 // 全域字型大小
 $font-size: 20px;
 // 全域字型粗體
@@ -22,26 +17,29 @@ $line-height-title: 1.2;
 // text行距
 $line-height-text: 1.4;
 // 預設文字顏色
-$text-color: rgb(0, 189, 209);
+$text-color: #40587c;
+// 預設hover文字顏色
+$text-color: #fff;
 // 預設連結顏色
-$link-color: #00BDD1;
+$link-color: #40587c;
 // 預設連結hover顏色
-$link-color-hover: #0080A8;
+$link-color-hover: #fff;
 // 按鈕顏色
-$btn-color: #5C9FB9;
+$btn-color: #40587c;
 // 按鈕hover顏色
-$btn-color-hover: #0080A8;
+$btn-color-hover: #fff;
 // 空值
 $null: null;
 // icon大小
 $icon-size: 36px;
 // icon文字大小
-$icon-font: 20px; 
+$icon-font: 20px;
 
 // 預設距離
 $baseSpace: 10px;
+
 // 設定間距的方法
-@function space($count: 1){
+@function space($count: 1) {
     @return $baseSpace * $count;
 }
 
@@ -50,11 +48,13 @@ $baseSpace: 10px;
     display: block;
     text-decoration: none;
 }
+
 %flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 %img-mw {
     display: block;
     max-width: 100%;
