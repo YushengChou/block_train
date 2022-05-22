@@ -22,15 +22,11 @@ $line-height-title: 1.2;
 // text行距
 $line-height-text: 1.4;
 // 預設文字顏色
-$text-color: rgb(0, 189, 209);
-// 預設連結顏色
-$link-color: #00BDD1;
-// 預設連結hover顏色
-$link-color-hover: #0080A8;
+$text-color: rgb(64,88,124);
 // 按鈕顏色
-$btn-color: #5C9FB9;
-// 按鈕hover顏色
-$btn-color-hover: #0080A8;
+$btn-color: rgb(67,86,118);
+// 強調色
+$waring-color:rgb(237,151,105);
 // 空值
 $null: null;
 // icon大小
@@ -40,6 +36,7 @@ $icon-font: 20px;
 
 // 預設距離
 $baseSpace: 10px;
+
 // 設定間距的方法
 @function space($count: 1){
     @return $baseSpace * $count;
