@@ -1,0 +1,14 @@
+.index {
+    display: flex;
+    overflow: hidden;
+
+    .index_wrapper {
+        // 背景顏色暫時看排版用
+        background-color: rgba(0, 0, 0, .1);
+        flex-shrink: 0;
+        width: $container-width;
+        height: $container-height;
+        padding: 20px;
+        margin: 20px;
+    }
+}

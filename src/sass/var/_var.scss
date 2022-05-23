@@ -5,8 +5,9 @@ $title:("h1": 2rem,
     "h4": 3.2rem,
     "h5": 2.8rem,
     "h6": 2.4rem);
-// 網站整體寬度
-$container-width: calc(100vh - 40px);
+// 網站整體寬度/高度
+$container-width: calc(100vw - 40px);
+$container-height: calc(100vh - 40px);
 
 // 全域字型大小
 $font-size: 20px;
