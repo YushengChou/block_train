@@ -1,8 +1,33 @@
-footer{
-    a{
-        color: $link-color;
-        i{
-            font-size: 40px;
+footer {
+    width: 100%;
+    height: 40px;
+    border: $link-color 1px solid;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    a {
+        display: block;
+        height: 100%;
+        width: 40px;
+        color: white;
+        position: relative;
+        .square {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .fb_front {
+                width: 100%;
+                height: 100%;
+                background-color: $link-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
