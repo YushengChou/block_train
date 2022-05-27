@@ -3,8 +3,12 @@
     overflow: hidden;
 
     .index_wrapper {
+        position: relative;
+        overflow: hidden;
+        outline: $link-color 1px solid;
         // 背景顏色暫時看排版用
-        background-color: rgba(0, 0, 0, .1);        
+        // background-color: rgba(0, 0, 0, .1);
+        background-color: white;       
         flex-shrink: 0;
         width: $container-width;
         height: $container-height;
