@@ -5,20 +5,69 @@
                 width: 40px;
             }
         }
-        .time {
 
-        }
-        .weather {
+        .currentTime {
+            .clock {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border: 2px solid #40587c;
+                border-radius: 50%;
 
-        }
-        .marquee {
+                .wrapper {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
 
-        }
-        .projectList {
+                    .hand {
+                        position: absolute;
+                        transform-origin: 50% 100%;
+                        background-color: #40587c;
+                    }
 
+                    .hr {
+                        transform: translate(-50%, -50%);
+                        left: calc(50% - 2px);
+                        top: calc(50% - 7px);
+                        width: 2px;
+                        height: 7px;
+                        animation: rotateHand 43200s linear infinite;
+                    }
+
+                    .min {
+                        transform: translate(-50%, -50%);
+                        left: calc(50% - 2px);
+                        top: calc(50% - 9px);
+                        width: 2px;
+                        height: 9px;
+                        animation: rotateHand 3600s linear infinite;
+                    }
+
+                    .sec {
+                        background-color: red;
+                        transform: translate(-50%, -50%);
+                        left: calc(50% - 1px);
+                        top: calc(50% - 10px);
+                        width: 1px;
+                        height: 10px;
+                        animation: rotateHand 60s linear infinite;
+                    }
+
+                    @keyframes rotateHand {
+                        to {
+                            transform: translate(-50%, -50%) rotate(1turn);
+                        }
+                    }
+                }
+            }
         }
-        .hamburger {
-            
-        }
+
+        .weather {}
+
+        .marquee {}
+
+        .projectList {}
+
+        .hamburger {}
     }
 }
